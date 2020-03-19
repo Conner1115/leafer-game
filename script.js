@@ -130,6 +130,16 @@ var leafEnergy = 0;
             
         },
         {
+            name:"Barracks",
+            power:0,
+            d:"a building that allows you to get 5 soldiers per second.",
+            sps:5,
+            cost:5000,
+            req:["barracks"],
+            takeUpC:5,
+            takeUpS:5,
+        },
+        {
             name:"army trainer",
             power:5,
             d:"trains leafer soldiers to fight and gives you one per second.  buy more of these units for more soldiers.",
