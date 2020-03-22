@@ -9,7 +9,7 @@ var leafEnergy = 0;
     var power = [0,population[1]/25,population[2]/10];
     var troops = 0;
     var upgradeArray = [0,0,0,0,0,0,0,0,0,0,0,0,0];
-    var soldierCount = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
+    var soldierCount = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
     var totalEP = population[1]+population[2];
     var energyUpgrades = [
         {
