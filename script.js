@@ -4,7 +4,7 @@ var leafEnergy = 0;
     var sPS = 0;
     var time = 0;
     var soldiers = 0;
-    var population = [300000,640000000,720000000];
+    var population = [300000,64000000,72000000];
     var armySizes = [soldiers,population[1]/50,population[2]/25];
     var power = [0,population[1]/25,population[2]/10];
     var troops = 0;
@@ -392,18 +392,13 @@ var leafEnergy = 0;
         showPage("#Battlefield");
     });
     $("#destroy").on("click",function(){
-        if(power[0] % 2 === 0){
         population[1]-=power[0];
+        population[2]-=power[0];
             power[0]+=1;
             population[1]-=power[0];
             power[0] = 0;
             soldiers = 0;
-        }else{
-            power[0]+=1;
-            population[1]-=power[0];
-            soldiers = 0;
-            power[0] = 0;
-        }
+        
         armySizes[0]=0;
         if(population[1]+population[2] <= 10000){
             showPage("#Win")
